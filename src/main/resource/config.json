@@ -1,0 +1,20 @@
+{
+    "solrConfig":{
+        "docCollection":{
+            "zkHost":"zk1:2181,zk2:2181,zk3:2181",
+            "lbServers":[
+                "http://solr1.doc.test.com:9091/solr/doc/",
+                "http://solr2.doc.test.com:8080/solr/doc/"
+            ]
+            
+        },
+        "autocpltCollection":{
+            "zkHost":"zk1:2181,zk2:2181,zk3:2181",
+            "lbServers":[
+                "http://solr1.doc.test.com:9091/solr/autocplt/",
+                "http://solr2.doc.test.com:8080/solr/autocplt/"
+            ]
+        }
+        
+    }
+}
